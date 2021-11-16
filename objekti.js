@@ -33,8 +33,20 @@ let school = {
       let naziv = "da i ne";
       console.log(school.naziv);
     },
+    increaseStudents: function () {
+      this.broj_studenata++;
+      console.log("Novi broj studenata: " + this.broj_studenata);
+    },
   },
 };
+school.podaci.increaseStudents();
+
+for (i = 0; i < 10; i++) {
+  school.podaci.increaseStudents();
+}
+console.log(school);
+
+school.podaci.print();
 
 school.adresa = "Bulevar Kralja Aleksandra 12";
 
