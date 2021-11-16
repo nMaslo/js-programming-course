@@ -123,3 +123,49 @@ console.log(niz_Gradova, ...novi_Gradovi);
 
 let string_niz_Gradova = niz_Gradova.join("-");
 console.log(string_niz_Gradova.split("-"));
+
+let cities = ["Beograd", "Uzice", "Kraljevo", "Cacak", "Krusevac", "Sabac"];
+
+for (let city in cities) {
+  console.log(cities[city]);
+}
+
+cities.forEach((city) => console.log(city));
+cities.map((city) => console.log(city));
+
+let sum = (a, b) => {
+  return a + b;
+};
+console.log(sum(4, 8));
+
+let new_citeis = cities.map((city, i) => {
+  return `0${i} - ${city}`;
+});
+
+cities.forEach((city, i) => {
+  console.log(`00${i} - ${city}`);
+});
+
+console.log(cities);
+console.log(new_citeis);
+
+let filtrirano = cities.filter((item) => item === "Beograd");
+console.log(filtrirano);
+
+let fined = cities.find((item) => item === "Beograd");
+console.log(fined);
+
+let findIndex = cities.findIndex((item) => item === "Beograd");
+console.log(findIndex);
+
+let includes = loto.includes(15);
+console.log(includes);
+
+let bar_jedan = cities.some((item) => item === "Beograd");
+console.log(bar_jedan);
+
+let svi_elementi = loto.every((item) => item > 0);
+console.log(svi_elementi);
+
+let zbir = loto.reduce((x, y) => x + y, 25);
+console.log(zbir);
