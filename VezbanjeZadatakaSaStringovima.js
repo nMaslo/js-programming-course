@@ -59,6 +59,7 @@ console.log(newTekst);
 let arrayFromTekst = tekst.split(" ");
 
 for (i = 0; i < arrayFromTekst.length; i++) {
+  let 
   for (j = 0; j < arrayFromTekst[i].length; j++) {
     if (j == arrayFromTekst[i].length) {
       let sub = arrayFromTekst[i][j].toUpperCase();
@@ -67,4 +68,4 @@ for (i = 0; i < arrayFromTekst.length; i++) {
 }
 let newTekst = arrayFromTekst.join(" ");
 console.log(newTekst);
-// msm sad imam sigurno neke glupe greske jer sam nesto experimentisao
+
